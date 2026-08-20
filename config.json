@@ -1,0 +1,114 @@
+{
+  "CURRENT_PROFILE": "ACCURACY",
+  "PROFILES": {
+    "ACCURACY": {
+      "TOGGLES": {
+        "USE_GEOMETRIC": true,
+        "USE_TEXTURE": true,
+        "USE_BOUNDARY": true
+      },
+      "SMOOTHING": {
+        "EMA_ALPHA": 0.15,
+        "WINDOW_SIZE": 30
+      },
+      "THRESHOLDS": {
+        "EAR_BLINK_THRESHOLD": 0.21,
+        "BLINK_MIN_BPM": 6.0,
+        "BLINK_MAX_BPM": 40.0,
+        "JITTER_THRESHOLD": 0.015,
+        "JITTER_SCALE": 0.045,
+        "SIDE_POSE_YAW_THRESHOLD": 0.28,
+        "SIDE_JUMP_THRESHOLD": 0.2,
+        "LOST_COUNT_MAX_TOLERANCE": 6,
+        "TEXTURE_THRESHOLD": 55.0,
+        "BOUNDARY_THRESHOLD": 25.0
+      },
+      "WEIGHTS": {
+        "GEOMETRIC_WEIGHT": 0.4,
+        "TEXTURE_WEIGHT": 0.3,
+        "BOUNDARY_WEIGHT": 0.3
+      },
+      "GEOMETRIC_WEIGHTS": {
+        "BLINK": 0.4,
+        "JITTER": 0.3,
+        "SIDE": 0.3
+      },
+      "LOG_SETTINGS": {
+        "SAVE_CSV": true,
+        "CSV_PATH": "logs/tuning_metrics_accuracy.csv",
+        "LOG_EVERY_FRAME": false,
+        "LOG_INTERVAL_SEC": 1.0
+      },
+      "PERFORMANCE": {
+        "JAWLINE_MASK_THICKNESS": 6,
+        "FRAME_SKIP": 1,
+        "PROCESS_SCALE": 0.65
+      },
+      "SECURITY_SETTINGS": {
+        "ENABLE_VCAM_BLOCK": true,
+        "ENABLE_REMOTE_SCAN": true,
+        "SCAN_INTERVAL_SEC": 1.0
+      },
+      "RISK_LEVELS": {
+        "CAUTION": 0.45,
+        "WARNING": 0.65
+      }
+    },
+    "SPEED": {
+      "TOGGLES": {
+        "USE_GEOMETRIC": true,
+        "USE_TEXTURE": false,
+        "USE_BOUNDARY": true
+      },
+      "SMOOTHING": {
+        "EMA_ALPHA": 0.18,
+        "WINDOW_SIZE": 18
+      },
+      "THRESHOLDS": {
+        "EAR_BLINK_THRESHOLD": 0.21,
+        "BLINK_MIN_BPM": 6.0,
+        "BLINK_MAX_BPM": 40.0,
+        "JITTER_THRESHOLD": 0.015,
+        "JITTER_SCALE": 0.045,
+        "SIDE_POSE_YAW_THRESHOLD": 0.28,
+        "SIDE_JUMP_THRESHOLD": 0.2,
+        "LOST_COUNT_MAX_TOLERANCE": 6,
+        "TEXTURE_THRESHOLD": 55.0,
+        "BOUNDARY_THRESHOLD": 25.0
+      },
+      "WEIGHTS": {
+        "GEOMETRIC_WEIGHT": 0.6,
+        "TEXTURE_WEIGHT": 0.0,
+        "BOUNDARY_WEIGHT": 0.4
+      },
+      "GEOMETRIC_WEIGHTS": {
+        "BLINK": 0.4,
+        "JITTER": 0.3,
+        "SIDE": 0.3
+      },
+      "LOG_SETTINGS": {
+        "SAVE_CSV": false,
+        "CSV_PATH": "logs/tuning_metrics_speed.csv",
+        "LOG_EVERY_FRAME": false,
+        "LOG_INTERVAL_SEC": 1.0
+      },
+      "PERFORMANCE": {
+        "JAWLINE_MASK_THICKNESS": 3,
+        "FRAME_SKIP": 2,
+        "PROCESS_SCALE": 0.5
+      },
+      "SECURITY_SETTINGS": {
+        "ENABLE_VCAM_BLOCK": true,
+        "ENABLE_REMOTE_SCAN": true,
+        "SCAN_INTERVAL_SEC": 3.0
+      },
+      "RISK_LEVELS": {
+        "CAUTION": 0.45,
+        "WARNING": 0.65
+      }
+    }
+  },
+  "RUNTIME": {
+    "CONFIG_RELOAD_SECONDS": 1.0
+  }
+}
