@@ -38,6 +38,8 @@ It combines facial landmark geometry, texture frequency analysis, jawline bounda
 
 ```bash
 cd C:\Users\saga6\realtime-deepfake-detector
+git clone https://github.com/m2nwoo/-realtime-deepfake-detector.git
+cd "./-realtime-deepfake-detector"
 python -m pip install -r requirements.txt
 python main.py
 ```
